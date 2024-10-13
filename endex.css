@@ -1,0 +1,31 @@
+Body {
+    Font-family: Arial, sans-serif;
+    Background-color: #2c2c2c;
+    Color: #ffffff;
+    Display: flex;
+    Justify-content: center;
+    Align-items: center;
+    Height: 100vh;
+    Margin: 0;
+}
+
+Table {
+    Width: 80%;
+    Border-collapse: collapse;
+    Margin: 20px 0;
+    Font-size: 18px;
+    Text-align: center;
+}
+
+Th, td {
+    Padding: 12px;
+    Border: 1px solid #dddddd;
+}
+
+Thead {
+    Background-color: #444444;
+}
+
+Tbody tr:nth-child(even) {
+    Background-color: #333333;
+}

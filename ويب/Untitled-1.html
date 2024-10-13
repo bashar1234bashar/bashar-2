@@ -1,0 +1,171 @@
+
+html
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>أنواع الثغرات</title>
+</head>
+<body>
+    <header>
+        <h1>أنواع الثغرات</h1>
+    </header>
+    <main>
+        <h2>مرر الماوس فوق الزر لمعرفة الأنواع</h2>
+        <div class="dropdown">
+            <button class="dropbtn">أنواع الثغرات</button>
+            <div class="dropdown-content">
+                <a href="page1.html">ثغرة 1</a>
+                <a href="page2.html">ثغرة 2</a>
+                <a href="page3.html">ثغرة 3</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2023 جميع الحقوق محفوظة</p>
+    </footer>
+</body>
+</html>
+
+
+### 2. page1.html
+html
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ثغرة 1</title>
+</head>
+<body>
+    <header>
+        <h1>ثغرة 1</h1>
+    </header>
+    <main>
+        <p>تفاصيل حول ثغرة 1...</p>
+    </main>
+    <footer>
+        <p><a href="index.html"> العودة إلى الصفحة الرئيسية</a></p>
+    </footer>
+</body>
+</html>
+
+
+### 3. page2.html
+html
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ثغرة 2</title>
+</head>
+<body>
+    <header>
+        <h1>ثغرة 2</h1>
+    </header>
+    <main>
+        <p>تفاصيل حول ثغرة 2...</p>
+    </main>
+    <footer>
+        <p><a href="index.html"> العودة إلى الصفحة الرئيسية</a></p>
+    </footer>
+</body>
+</html>
+
+
+### 4. page3.html
+html
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ثغرة 3</title>
+</head>
+<body>
+    <header>
+        <h1>ثغرة 3</h1>
+    </header>
+    <main>
+        <p>تفاصيل حول ثغرة 3...</p>
+    </main>
+    <footer>
+        <p><a href="index.html"> العودة إلى الصفحة الرئيسية</a></p>
+    </footer>
+</body>
+</html>
+
+
+### 5. style.css
+css
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
